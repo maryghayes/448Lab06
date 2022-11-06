@@ -15,8 +15,9 @@
         </div>
             <script langugage="javascript" type="text/javascript">
             function validation(){
-                if(document.getElementById("pass2") != document.getElementById('pass1').value){
-                input.setCustomValidity('Password is not matching.');
+
+                if(document.getElementById("pass2").value != document.getElementById('pass1').value){
+                    input.setCustomValidity('Password is not matching.');
                 }
                 else{
                     input.setCustomValidity('Loging in successfull');
