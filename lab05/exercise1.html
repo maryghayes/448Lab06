@@ -6,16 +6,21 @@
         <div>
             <label for="pass">Password 1</label>
             <input type="password" id="pass1" name="password" minlength="8" required/>
+            <br></br>
 
             <label for="pass2">Password Confirmed</label>
-            <input type="password2" id="pass" name="password" minlength="8" required oninput="confirm(this)"/>
+            <input type="password2" id="pass2" name="password" minlength="8" required/>
+
+            <button onclick="validation()">Validate</button>
         </div>
             <script langugage="javascript" type="text/javascript">
-            if(input.value != document.getElementById('pass1').value){
+            function validation(){
+                if(document.getElementById("pass2") != document.getElementById('pass1').value){
                 input.setCustomValidity('Password is not matching.');
-            }
-            else{
-                input.setCustomValidity('Loging in successfull');
+                }
+                else{
+                    input.setCustomValidity('Loging in successfull');
+                }
             }
         </script>
     </body>
