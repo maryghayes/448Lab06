@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Exercise 1 </title>
+    </head>
+    <body>
+        <div>
+            <label for="pass">Password 1</label>
+            <input type="password" id="pass1" name="password" minlength="8" required/>
+
+            <label for="pass2">Password Confirmed</label>
+            <input type="password2" id="pass" name="password" minlength="8" required oninput="confirm(this)"/>
+        </div>
+            <script langugage="javascript" type="text/javascript">
+            if(input.value != document.getElementById('pass1').value){
+                input.setCustomValidity('Password is not matching.');
+            }
+            else{
+                input.setCustomValidity('Loging in successfull');
+            }
+        </script>
+    </body>
+</html>
