@@ -4,23 +4,19 @@
     </head>
     <body>
         <div>
-            <label for="pass">Password 1</label>
-            <input type="password" id="pass1" name="password" minlength="8" required/>
-            <br></br>
 
-            <label for="pass2">Password Confirmed</label>
-            <input type="password2" id="pass2" name="password" minlength="8" required/>
+            <p>Password: <input type="text" id="pass1"></p>
+            <p>Password confirm: <input type="text" id="pass2"></p>
 
             <button onclick="validation()">Validate</button>
         </div>
-            <script langugage="javascript" type="text/javascript">
+            <script>
             function validation(){
-
-                if(document.getElementById("pass2").value != document.getElementById('pass1').value){
-                    alert("Password is not matching");
+                if(document.getElementById("pass2").value == document.getElementById('pass1').value){
+                    alert("Password is matching");
                 }
                 else{
-                    alert("Password matching successfull");
+                    alert("Password matching is not successfull");
                 }
             }
         </script>
