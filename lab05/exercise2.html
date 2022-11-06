@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5px;
+  margin-top: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <img src="img_nature_wide.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="img_snow_wide.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="img_mountains_wide.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 
