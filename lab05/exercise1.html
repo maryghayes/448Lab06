@@ -11,14 +11,12 @@
             <button onclick="validation()">Validate</button>
         </div>
             <script>
-            function validation(){
-                alert(document.getElementById("pass1").length); 
+            function validation(){ 
                 if(document.getElementById("pass2").value != document.getElementById('pass1').value){
                     alert("the passwords entered don't match");
                 }
-                else if(document.getElementById("pass1").length > 8){
-                    alert("element one length: " + document.getElementById("pass1").length); 
-                    //alert("the passwords are not at least 8 characterslong");
+                else if(document.getElementById("pass1").value.length < 8){
+                    alert("the passwords are not at least 8 characterslong");
                 }
                 else{
                     alert("valid!");
