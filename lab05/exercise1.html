@@ -15,7 +15,7 @@
                 if(document.getElementById("pass2").value != document.getElementById('pass1').value){
                     alert("the passwords entered don't match");
                 }
-                else if(document.getElementById("pass1").innerHTML.length > 8){
+                else if(document.getElementById("pass1").length < 8){
                     alert("the passwords are not at least 8 characterslong");
                 }
                 else{
