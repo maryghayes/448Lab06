@@ -23,7 +23,7 @@
             <script>
             function changes(){ 
                 if(document.getElementById("borderInput").value == "red value"){
-                    alert("put red here");
+                    border.style.borderColor = red; 
                 }
                 else if(document.getElementById("borderInput").value == "green value"){
                     alert("put green here");
@@ -37,13 +37,13 @@
 
 
                 if(document.getElementById("colorInput").value == "red value"){
-                    //<body style="background-color:red;"></body>
+                    document.body.style.backgroundColor = "red";
                 }
                 else if(document.getElementById("colorInput").value == "green value"){
-                    //<body style="background-color:green;"></body>
+                    document.body.style.backgroundColor = "green";
                 }
                 else if(document.getElementById("colorInput").value == "blue value"){
-                    //<body style="background-color:blue;"></body>
+                    document.body.style.backgroundColor = "blue";
                 }
             }
         </script>
