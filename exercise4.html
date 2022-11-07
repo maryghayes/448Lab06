@@ -3,40 +3,40 @@
         <title> Exercise 1 </title>
     </head>
     <body>
-        <div>
+        <iframe id ="border" style="border: solix 4px black"  ></iframe> 
 
-            <p>Here is my dummy text. It is not very important.<br> It's actually not anything at all. It's just complete non-sense. <br> But you have made it this far. Congrats.</p>
-            
-            <br>
-            <p>Border: <input type="text" id="border"></p>
-            <p>Background color: <input type="text" id="color"></p>
+        <p>Here is my dummy text. It is not very important.<br> It's actually not anything at all. It's just complete non-sense. <br> But you have made it this far. Congrats.</p>
+        
+        <br>
+        <p>Border: <input type="text" id="borderInput"></p>
+        <p>Background color: <input type="text" id="colorInput"></p>
 
-            <button onclick="changes()">Submit Change</button>
-        </div>
+        <button onclick="changes()">Submit Change</button>
+
             <script>
             function changes(){ 
-                if(document.getElementById("border").value == "red value"){
-                    alert("put red here");
+                if(document.getElementById("borderInput").value == "red value"){
+                    document.getElementById("border").style.borderColor = red;
                 }
-                else if(document.getElementById("border").value == "green value"){
+                else if(document.getElementById("borderInput").value == "green value"){
                     alert("put green here");
                 }
-                else if(document.getElementById("border").value == "blue value"){
+                else if(document.getElementById("borderInput").value == "blue value"){
                     alert("put blue here");
                 }
-                else if(document.getElementById("border").value == "width"){
+                else if(document.getElementById("borderInput").value == "width"){
                     alert("change width");
                 }
 
 
                 if(document.getElementById("color").value == "red value"){
-                    alert("put red here");
+                    <body style="background-color:red;"></body>
                 }
                 else if(document.getElementById("color").value == "green value"){
-                    alert("put green here");
+                    <body style="background-color:green;"></body>
                 }
-                else if(document.getElementById("border").value == "blue value"){
-                    alert("put blue here");
+                else if(document.getElementById("color").value == "blue value"){
+                    <body style="background-color:blue;"></body>
                 }
             }
         </script>
