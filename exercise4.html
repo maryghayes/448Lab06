@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Exercise 1 </title>
+    </head>
+    <body>
+        <div>
+
+            <p>Here is my dummy text. It is not very important.<br> It's actually not anything at all. It's just complete non-sense. <br> But you have made it this far. Congrats.</p>
+            
+            <br>
+            <p>Border: <input type="text" id="border"></p>
+            <p>Background color: <input type="text" id="color"></p>
+
+            <button onclick="changes()">Submit Change</button>
+        </div>
+            <script>
+            function changes(){ 
+                if(document.getElementById("border").value == "red value"){
+                    alert("put red here");
+                }
+                else if(document.getElementById("border").value == "green value"){
+                    alert("put green here");
+                }
+                else if(document.getElementById("border").value == "blue value"){
+                    alert("put blue here");
+                }
+                else if(document.getElementById("border").value == "width"){
+                    alert("change width");
+                }
+
+
+                if(document.getElementById("color").value == "red value"){
+                    alert("put red here");
+                }
+                else if(document.getElementById("color").value == "green value"){
+                    alert("put green here");
+                }
+                else if(document.getElementById("border").value == "blue value"){
+                    alert("put blue here");
+                }
+            }
+        </script>
+    </body>
+</html>
