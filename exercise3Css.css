@@ -8,8 +8,10 @@ p{
 }
 a{
     color: #870432; 
-
+    font-family: "Georgia", serif;
+    font-size: 15pt; 
 }
+
 a:hover{
     color: #B51d52;
 }
