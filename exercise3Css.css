@@ -1,0 +1,19 @@
+body{
+    background-color: #Fbe0e9; 
+}
+p{
+    color: #B51d52;
+    font-family: "Georgia", serif;
+    font-size: 22pt; 
+}
+a{
+    color: #870432; 
+
+}
+a:hover{
+    color: #B51d52;
+}
+
+p.special{
+    color: #F1eff0; 
+}
