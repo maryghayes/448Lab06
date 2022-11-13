@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Exercise 4 </title>
+        <link href="exercise4.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        
+        <div id = "border">
+        <p>Here is my dummy text. It is not very important.<br> It's actually not anything at all. It's just complete non-sense. <br> But you have made it this far. Congrats.</p>
+        </div>
+        <br>
+        
+        <p>Border: <input type="text" id="borderInput"></p>
+        <p>Background color: <input type="text" id="colorInput"></p>
+
+        <button onclick="changes()">Submit Change</button>
+
+            <script>
+            function changes(){ 
+                if(document.getElementById("borderInput").value == "red value"){
+                    document.getElementById("border").style.borderColor= "red";
+                }
+                else if(document.getElementById("borderInput").value == "green value"){
+                    document.getElementById("border").style.borderColor= "green";
+                }
+                else if(document.getElementById("borderInput").value == "blue value"){
+                    document.getElementById("border").style.borderColor= "blue";
+                }
+                else if(document.getElementById("borderInput").value == "width"){
+                    document.getElementById("border").style.borderWidth= "20px";
+                }
+                if(document.getElementById("colorInput").value == "red value"){
+                    document.body.style.backgroundColor = "red";
+                }
+                else if(document.getElementById("colorInput").value == "green value"){
+                    document.body.style.backgroundColor = "green";
+                }
+                else if(document.getElementById("colorInput").value == "blue value"){
+                    document.body.style.backgroundColor = "blue";
+                }
+            }
+        </script>
+    </body>
+</html>

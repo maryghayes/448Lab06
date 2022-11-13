@@ -1,0 +1,32 @@
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5px;
+  margin-top: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+img {
+    float: center;
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+}

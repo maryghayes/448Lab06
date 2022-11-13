@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> Exercise 3 </title>
+        <link href="exercise3Css.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="content">
+            <h1>About me!</h1>
+            <div class="myPhoto">
+                <img src="6334DAA9-6892-4F1D-A68A-6B3ECFD118BE-9365-000005790773B905.JPG" style="width:80%" class="center">
+            </div>
+        </div>
+        <p>Hi, my name is Mary Hayes. I am a junior studying CS at KU! <br>I grew up in St. Louis, with two older sisters. I have a very cute dog named Stella. <br>In my free time I like to watch movies, drink tea, and eat home-made meals. My favorite color is pink</p>
+        <div class="brick">
+            <div class = "content">
+                <p class="special"><b>some of my favorite websites!</b></p>
+                <a href="https://www.alphadeltapiku.com/">My sorority's website</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.facebook.com/">facebook marketplace</a>
+
+                <p class ="special"><b>My <i>favorite</i> study music!</b></p>
+                <iframe width="500" height="315"src="https://www.youtube.com/embed/UxjPuxBVZ_Y" title="Oldies music playing in another room and it's raining" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+            </div>
+        <script>
+            function validation(){ 
+                if(document.getElementById("pass2").value != document.getElementById('pass1').value){
+                    alert("the passwords entered don't match");
+                }
+                else if(document.getElementById("pass1").value.length < 8){
+                    alert("the passwords are not at least 8 characterslong");
+                }
+                else{
+                    alert("valid!");
+                }
+            }
+        </script>
+    </body>
+</html>

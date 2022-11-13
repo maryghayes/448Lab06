@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> Exercise 1 </title>
+    </head>
+    <body>
+        <div>
+
+            <p>Password: <input type="text" id="pass1"></p>
+            <p>Password confirm: <input type="text" id="pass2"></p>
+
+            <button onclick="validation()">Validate</button>
+        </div>
+            <script>
+            function validation(){ 
+                if(document.getElementById("pass2").value != document.getElementById('pass1').value){
+                    alert("the passwords entered don't match");
+                }
+                else if(document.getElementById("pass1").value.length < 8){
+                    alert("the passwords are not at least 8 characters long");
+                }
+                else{
+                    alert("valid!");
+                }
+            }
+        </script>
+    </body>
+</html>
