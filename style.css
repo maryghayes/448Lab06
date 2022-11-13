@@ -1,0 +1,21 @@
+body{
+    background-color: #0b2c8694;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(116, 116, 126);
+    border-radius: 4px;
+}
+
+input[type=radio] {
+    border: 2px solid rgb(116, 116, 126);
+    border-radius: 4px;
+}
+
+table, th, td {
+    border: 1px solid;
+  }

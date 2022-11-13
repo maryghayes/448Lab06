@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+      </head>
+<body>
+    <script src="formChecker.js"></script>
+    <form name= "shop" action = "customerBackend.php" method = "post" onsubmit = "return(validateForm())">
+        <h3>Login: </h3>
+        <input type="text" name = "username"> Username </input><br>
+        <input type="text" name = "password"> Password </input><br>
+        <br>
+        <h3>Quanitity of Bananas $1.00 : </h3>
+        <input type="number" name="Bananas" min="0" max="20">
+        <h3>Quanitity of Strawberries $5.00: </h3>
+        <input type="number" name="Strawberries" min="0" max="20">
+        <h3>Quanitity of Apples $2.00: </h3>
+        <input type="number" name="Apples" min="0" max="20">
+        <br>
+        <h3>Shipping options: </h3>
+        <input type="radio" name = "q1" value = "Free 7 day"> Free 7 day </input><br>
+        <input type="radio" name = "q1" value = "$50.00 over night"> $50.00 over night </input><br>
+        <input type="radio" name = "q1" value = "$5.00 three day"> $5.00 three day </input><br>
+        <br>
+        <input type = "Submit" value="Submit">
+        <input type = "Reset" value ="Reset">
+    </form>
+  </body>
+  </html>
